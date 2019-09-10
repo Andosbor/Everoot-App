@@ -20,7 +20,7 @@ expense DECIMAL(10,2) DEFAULT 0
 
 INSERT INTO ec_tracker(month_name,energy_expenditure,expense)
 VALUES ("January", "10.399 kWh", 110.21),
-	   ("February","15.5 kWh",0),
+	("February","15.5 kWh",0),
        ("March","",0),
        ("April","",0),
        ("May","", 0),
@@ -48,7 +48,7 @@ expense DECIMAL(10,2) DEFAULT 0
 
 INSERT INTO wc_tracker(month_name,water_expenditure,expense)
 VALUES ("January", "95 gallons", 80),
-	   ("February","",0),
+	("February","",0),
        ("March","",0),
        ("April","",0),
        ("May","", 0),
@@ -78,7 +78,7 @@ totals DECIMAL(10) DEFAULT 0
 
 INSERT INTO wr_tracker(month_name,trash_bags,compost_bins,recycle_bins,hazardous_waste_bins,totals)
 VALUES ("January", 6, 4,6,1,17),
-	   ("February",0,0,0,0,0),
+	("February",0,0,0,0,0),
        ("March",0,0,0,0,0),
        ("April",0,0,0,0,0),
        ("May",0,0,0,0,0),
@@ -104,7 +104,7 @@ offset_cost DECIMAL(10,2) DEFAULT 0
 
 INSERT INTO cr_tracker(month_name,carbon_expenditure,offset_cost)
 VALUES ("January", "16.4 metric tons", 28),
-	   ("February","",0),
+	("February","",0),
        ("March","",0),
        ("April","",0),
        ("May","", 0),
@@ -130,7 +130,7 @@ travel_to_work_days DECIMAL(10) DEFAULT 0
 
 INSERT INTO employee_travel_data(month_name,commute_distance,travel_to_work_days)
 VALUES ("January", 6, 20),
-	   ("February",0,0),
+	("February",0,0),
        ("March",0,0),
        ("April",0,0),
        ("May",0, 0),
@@ -159,7 +159,7 @@ employee_name VARCHAR(50) NOT NULL
 
 INSERT INTO employee_names(employee_name)
 VALUES ("Joe Shmo"),
-	   (""),
+	(""),
        (""),
        (""),
        (""),
@@ -186,7 +186,7 @@ reimbursed TINYINT(1) DEFAULT 0
 
 INSERT INTO fitness_tracker(membership,annual_payment,total_yearly_reimbursement,reimbursed)
 VALUES ("Power of Your Om", 528.00, 0,0),
-	   ("",0,0,0),
+	("",0,0,0),
        ("",0,0,0);
 
 
@@ -203,7 +203,7 @@ redeemed TINYINT(1) DEFAULT 0
 
 INSERT INTO travel_commute_tracker(total_round_trip_bike_rides,$_in_tokens_earned,redeemed)
 VALUES (0, 20, 1),
-	   (0,0,0),
+	(0,0,0),
        (0,0,0);
 
 
@@ -224,7 +224,7 @@ reimbursed TINYINT(1) DEFAULT 0
 
 INSERT INTO education_tracker(events_attended,course_learnings,all_approved,hours,total_expenses,total_yearly_reimbursement,reimbursed)
 VALUES ("", "", 0,6,22.00,22,0),
-	   ("", "", 0,0,0,0,0);
+	("", "", 0,0,0,0,0);
 
  /*SELECT * FROM education_tracker; */
  
@@ -240,7 +240,7 @@ reviewed TINYINT(1) DEFAULT 0
 
 INSERT INTO goal_tracker(quarterly_goal,career_goal,personal_goal,reviewed)
 VALUES ("", "", "",0),
-	   ("", "", "",0);
+	("", "", "",0);
  
  /* SELECT * FROM goal_tracker; */
  
@@ -261,7 +261,7 @@ reimbursed TINYINT(1) DEFAULT 0
 
 INSERT INTO volunteer_time_tracker(employee_name,organization_name,volunteer_time,notes,reimbursement,reimbursed)
 VALUES ("James Young", "Surfrider Foundation", 1.5,"volunteered at a trash pick up on leadbetter beach",10, 1),
-	   ("", "", 0,"",0,0);
+	("", "", 0,"",0,0);
  
 /*SELECT * FROM volunteer_time_tracker; */
 
@@ -280,7 +280,7 @@ matched TINYINT(1) DEFAULT 0
 
 INSERT INTO employee_give_tracker(employee_name,organization_name,donation_link,date_of_donation,financial_give_value,receipt_sent_to_manager,matched)
 VALUES ("James Young", "SB ACT","http://sbact.org/donate/","1/26/2017",375.00, 1,1),
-	   ("", "", "","",0,1,1);
+	("", "", "","",0,1,1);
  
 /*SELECT * FROM employee_give_tracker; */
 
@@ -299,7 +299,7 @@ notes VARCHAR(300) NOT NULL
 
 INSERT INTO company_give_tracker(organization_name,date_of_donation,donation_type,unit_qty,financial_give_value,donated,notes)
 VALUES ("Surfrider Foundation", "1/18/2017","In Kind Donation","147 snack bites",1789.00, 1,"Donated unites to a surf camp for girls in SB"),
-	   ("Surfrider Foundation", "1/27/2017", "Marketing Expenses","1 FB ad",160,1,"ran a facebook ad for Surfrider");
+	("Surfrider Foundation", "1/27/2017", "Marketing Expenses","1 FB ad",160,1,"ran a facebook ad for Surfrider");
  
 /*SELECT * FROM company_give_tracker; */
 
