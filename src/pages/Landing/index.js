@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import logo from '../../assets/everoot-logo-white-01.png';
 import { Route, BrowserRouter, Redirect, Switch } from 'react-router-dom';
-
+import './styles.css';
 
 class Landing extends Component{
+  constructor(props) {
+    super(props);
+  }
 render(){
   return (
     <div className="App">
@@ -13,7 +16,7 @@ render(){
           <a href = "signup" className = "signup">Sign Up</a>
         </p>
         <p className = "login">
-         <a href = "employee" className = "login">Login</a>
+         <a href = "home" className = "login">Login</a>
         </p>
       </header>
     </div>
@@ -22,3 +25,10 @@ render(){
 }
 
 export default Landing;
+
+/*Authentication libraries
+    bcrypt-nodejs
+    express-session
+    passport
+    passport-local
+*/

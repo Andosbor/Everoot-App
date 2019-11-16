@@ -1,0 +1,13 @@
+.BikeTracker{
+    text-align: center;
+    background-color: #5e9b99;
+    min-height: 100vh;
+    color: #ffffff;
+    
+}
+h1{
+    margin: 0
+}
+.bikeDistance{
+    font-size: 40px;
+}
